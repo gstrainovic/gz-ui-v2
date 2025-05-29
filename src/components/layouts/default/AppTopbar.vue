@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export default {
   emits: ['topbarMenuToggle', 'menuToggle'],
   computed: {
@@ -23,13 +22,16 @@ export default {
 
 <template>
   <div class="layout-topbar">
-    <NuxtLink to="/" class="layout-topbar-logo">
-      <img alt="Logo" :src="topbarImage()">
-      <span>Admin Dashboard</span>
-    </NuxtLink>
     <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
       <i class="pi pi-bars" />
     </button>
+
+    <div class="layout-topbar-menu hidden lg:flex origin-top">
+      <img alt="Logo" :src="topbarImage()" class="logo">
+    </div>
+    <h1 class="pl-8">
+      Auswertungen
+    </h1>
 
     <button
       v-styleclass="{
@@ -57,3 +59,13 @@ export default {
     </ul>
   </div>
 </template>
+
+<style scoped>
+img.logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    /* oder gewünschte Maximalbreite */
+    display: block;
+}
+</style>
