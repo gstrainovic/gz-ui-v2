@@ -32,7 +32,6 @@ export default defineComponent({
           items: [
             { label: 'Metabase', icon: 'pi pi-fw pi-table', to: 'https://gz-mb.strainovic-it.ch', target: '_blank' },
             { label: 'Strapi', icon: 'pi pi-fw pi-table', to: 'https://gz-strapi.strainovic-it.ch', target: '_blank' },
-            { label: 'Abmelden', icon: 'pi pi-fw pi-sign-out', to: '/logout' }
           ]
         }
       ]

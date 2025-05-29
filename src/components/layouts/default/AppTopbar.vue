@@ -25,7 +25,7 @@ export default {
   <div class="layout-topbar">
     <NuxtLink to="/" class="layout-topbar-logo">
       <img alt="Logo" :src="topbarImage()">
-      <span>SAKAI</span>
+      <span>Admin Dashboard</span>
     </NuxtLink>
     <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
       <i class="pi pi-bars" />
@@ -44,6 +44,7 @@ export default {
     >
       <i class="pi pi-ellipsis-v" />
     </button>
+
     <ul class="layout-topbar-menu hidden lg:flex origin-top">
       <li>
         <NuxtLink to="/logout" class="logout-link">
