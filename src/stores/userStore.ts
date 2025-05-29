@@ -1,6 +1,6 @@
 export const useUserStore = defineStore('user', {
   state: () => ({
-    usersProd: [] as string[],
+    usersProd: [] as string[]
   }),
   actions: {
     async getUsers() {
@@ -15,4 +15,4 @@ export const useUserStore = defineStore('user', {
       return this.usersProd;
     }
   }
-})
+});

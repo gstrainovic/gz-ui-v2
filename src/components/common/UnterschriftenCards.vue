@@ -22,8 +22,7 @@
       </div>
     </div>
 
-    <div class="col-2"></div>
-
+    <div class="col-2" />
 
     <div class="card col-5">
       <h5>Vorgesetzter</h5>

@@ -1,8 +1,8 @@
 export const config = {
   api: {
     url: import.meta.env.VITE_API as string,
-    strapi: import.meta.env.VITE_STRAPI as string,
-  },
+    strapi: import.meta.env.VITE_STRAPI as string
+  }
 };
 
 if (!config.api.url || !config.api.strapi) {

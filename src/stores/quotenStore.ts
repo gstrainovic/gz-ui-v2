@@ -92,13 +92,13 @@ export const useQuotenStore = defineStore('quoten', {
         const data: QuotenData[] = await getQuoten(from, to, usernames) as QuotenData[];
 
         if (!Array.isArray(data)) {
-          throw new Error('response is not an array');
+          throw new TypeError('response is not an array');
         }
 
         this.quoten = data;
       } catch (error) {
         console.error('Failed to fetch data:', error);
       }
-    },
+    }
   }
 });
