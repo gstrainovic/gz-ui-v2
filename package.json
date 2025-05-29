@@ -1,6 +1,10 @@
 {
-  "name": "sakai-nuxt",
+  "name": "gravurzeile-admin-dashboard",
   "private": true,
+  "packageManager": "pnpm@8.15.9",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "NITRO_PRESET=vercel nuxi build",
@@ -58,16 +62,13 @@
       ]
     }
   },
-  "packageManager": "pnpm@8.15.9",
-  "engines": {
-    "node": ">=18"
-  },
-  "homepage": "https://github.com/who-jonson/sakai-nuxt#readme",
+
+  "homepage": "https://github.com/gstrainovic/gz-ui-v2#readme",
   "repository": {
-    "url": "https://github.com/who-jonson/sakai-nuxt",
+    "url": "https://github.com/gstrainovic/gz-ui-v2",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/who-jonson/sakai-nuxt/issues"
+    "url": "https://github.com/gstrainovic/gz-ui-v2/issues"
   }
 }

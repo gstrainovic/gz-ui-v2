@@ -1,18 +1,18 @@
-import config from '../composables/config'
+import config from '../composables/config';
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
-    authenticated: false,
+    authenticated: false
   }),
   actions: {
     async authenticateUser({ identifier, password }: LoginData) {
-      const { data }: any = await useFetch(config.api.url + 'login', {
+      const { data }: any = await useFetch(`${config.api.url}login`, {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: {
-            identifier,
-            password,
-        },
+          identifier,
+          password
+        }
       });
 
       if (data.value) {
@@ -25,6 +25,6 @@ export const useAuthStore = defineStore('auth', {
       const token = useCookie('token'); // useCookie new hook in nuxt 3
       this.authenticated = false; // set authenticated  state value to false
       token.value = null; // clear the token cookie
-    },
-  },
+    }
+  }
 });

@@ -1,4 +1,5 @@
 <script lang="ts">
+
 export default {
   emits: ['topbarMenuToggle', 'menuToggle'],
   computed: {
@@ -45,22 +46,12 @@ export default {
     </button>
     <ul class="layout-topbar-menu hidden lg:flex origin-top">
       <li>
-        <button class="p-link layout-topbar-button">
-          <i class="pi pi-calendar" />
-          <span>Events</span>
-        </button>
-      </li>
-      <li>
-        <button class="p-link layout-topbar-button">
-          <i class="pi pi-cog" />
-          <span>Settings</span>
-        </button>
-      </li>
-      <li>
-        <button class="p-link layout-topbar-button">
-          <i class="pi pi-user" />
-          <span>Profile</span>
-        </button>
+        <NuxtLink to="/logout" class="logout-link">
+          <button class="p-link layout-topbar-button">
+            <i class="pi pi-sign-out" />
+          </button>
+          <div>Abmelden</div>
+        </NuxtLink>
       </li>
     </ul>
   </div>
